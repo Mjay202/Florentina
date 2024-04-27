@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('gender')->nullable();
             $table->string('email')->unique();
             $table->string('image')->nullable();
-            $table->foreignId('role-id')->default(1)->constrained()->onDelete('cascade');
+            $table->foreignId('role_id')->default(1)->constrained()->onDelete('cascade');
             $table->string('password');
             $table->string('address')->nullable();
             $table->string('number')->nullable();

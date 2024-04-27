@@ -29,14 +29,15 @@
         </a>
       </div>
     </div>
-    <ul class="nav flex-column pt-3 pt-md-0">
+    @include('partials.patientsidebar')
+    {{-- <ul class="nav flex-column pt-3 pt-md-0">
       <li class="nav-item">
         <a href="/dashboard" class="nav-link d-flex align-items-center">
           <span class="sidebar-icon me-3">
             <img src="/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">
           </span>
           <span class="mt-1 ms-1 sidebar-text">
-            Volt Laravel
+            Dashboard
           </span>
         </a>
       </li>
@@ -332,6 +333,6 @@
           <span>Upgrade to Pro</span>
         </a>
       </li>
-    </ul>
+    </ul> --}}
   </div>
 </nav>

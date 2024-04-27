@@ -52,6 +52,13 @@ Route::get('/500', Err500::class)->name('500');
 Route::get('/upgrade-to-pro', UpgradeToPro::class)->name('upgrade-to-pro');
 
 Route::middleware('auth')->group(function () {
+    Route::group([
+        'middleware' => 'admin',
+        'prefix' => 'admin',
+        'as' => 'admin.'
+    ], function () {
+
+    });
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/profile-example', ProfileExample::class)->name('profile-example');
     Route::get('/users', Users::class)->name('users');
